@@ -1,6 +1,10 @@
 
 from google.cloud import translate_v2
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
+API_KEY = os.getenv('key.json')
 
 # Get the path to the JSON file from the environment variable
 json_file_path = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
